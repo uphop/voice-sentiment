@@ -1,0 +1,119 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#app {
+  padding: 20px;
+  font-family: robot, arial
+}
+svg {
+  fill: #000;
+  fill-opacity: 0.3;
+}
+
+path {
+  stroke: steelblue;
+  stroke-width: 2px;
+  fill: none;
+}
+
+.axis {
+  stroke: #000;
+}
+
+.axis-labels text {
+  fill: #000;
+  fill-opacity: 0.9;
+  font-size: 12px;
+  text-anchor: middle;
+}
+
+.axis-labels line {
+  stroke: #000;
+}
+
+.gridline {
+  opacity: 0.2;
+}
+
+td {
+  text-align: center;
+}
+
+textarea {
+  white-space: pre-line;
+  overflow-y: scroll;
+  height: 400px;
+  width: 960px;
+}
+
+.blink {
+	-webkit-animation: blink .75s linear infinite;
+	-moz-animation: blink .75s linear infinite;
+	-ms-animation: blink .75s linear infinite;
+	-o-animation: blink .75s linear infinite;
+	 animation: blink .75s linear infinite;
+}
+@-webkit-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-moz-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-o-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+div.transcribed {
+  overflow-y: auto;
+}
