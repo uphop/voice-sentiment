@@ -1,6 +1,6 @@
 # Overview
 
-This is a simple sentiment analysis application, transcribing audio input from microphone into text, running a sentiment analysis on that text and visualising [sentiment scores](https://www.quora.com/What-is-polarity-and-subjectivity-in-sentiment-analysis) - polarity (i.e. emotions expressed in a sentence) and subjectivity (which expresses some personal feelings, views, or beliefs).
+This is a simple sentiment analysis application, transcribing a real-time audio input from microphone into text using [Vosk](https://alphacephei.com/vosk/), and then running a sentiment analysis on that text with [TextBlob](https://textblob.readthedocs.io/en/dev/) and visualising [sentiment scores](https://www.quora.com/What-is-polarity-and-subjectivity-in-sentiment-analysis) - polarity (i.e. emotions expressed in a sentence) and subjectivity (which expresses some personal feelings, views, or beliefs).
 
 The project consists of of the following modules:
 * `voice-sentiment-app`: a React application, which captures audio stream from a microphone, streams audio chunks via a websocket to `speech-to-text-server` for transcribing, and then the transcribed text to `sentiment-assessment-server` to get sentiment scores.
@@ -54,7 +54,7 @@ rm vosk-model-en-us-aspire-0.2.zip
 cd ..
 ```
 
-# Usage
+# Starting-up
 
 Start `sentiment-assessment-server`:
 ```
@@ -73,4 +73,13 @@ Start `voice-sentiment-app`:
 cd voice-sentiment-app
 yarn start
 ```
+
+## Usage
+
+Press recording button, and start speaking into the microphone - the app will be capturing your speech, attempting to transcribe / assess sentiment scores, and visualise those as polartiy / subjectivity charts.
+
+Here is an example of what you should see as the result:
+![Screenshot](https://user-images.githubusercontent.com/74451637/102792387-1c6b5280-43b1-11eb-8dab-590c59007117.png)
+
+
 
