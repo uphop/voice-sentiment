@@ -78,8 +78,13 @@ yarn start
 
 Press recording button, and start speaking into the microphone - the app will be capturing your speech, attempting to transcribe / assess sentiment scores, and visualise those as polartiy / subjectivity charts.
 
+The text will be appended to the text area at the bottom of the page as soon as that is transcribed. Also, sentiment scores will be updated and visualised as soon as calculated based on the latest transcribed phrase.
+
 Here is an example of what you should see as the result:
 ![Screenshot](https://user-images.githubusercontent.com/74451637/102792387-1c6b5280-43b1-11eb-8dab-590c59007117.png)
+
+And here is a recorded example of transcribing / sentiment score assessment while streaming a sample YoutTube video with English practice lesson:
+[![Recorded_sample](http://img.youtube.com/vi/4XegsEG1NUU/0.jpg)](http://www.youtube.com/watch?v=4XegsEG1NUU "Voice Sentiment example")
 
 
 
