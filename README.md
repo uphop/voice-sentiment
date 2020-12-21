@@ -25,6 +25,7 @@ Install dependencies and prepare configuration for `voice-sentiment-app`:
 cd voice-sentiment-app
 yarn install
 cp .env.sample .env
+cd ..
 ```
 
 Install dependencies and prepare configuration for `sentiment-assessment-server`:
@@ -32,6 +33,7 @@ Install dependencies and prepare configuration for `sentiment-assessment-server`
 cd sentiment-assessment-server
 pip3 install -r requrements.txt
 cp .example-env .env
+cd..
 ```
 
 Install dependencies and prepare configuration for `speech-to-text-server`:
@@ -39,14 +41,17 @@ Install dependencies and prepare configuration for `speech-to-text-server`:
 cd speech-to-text-server
 pip3 install -r requrements.txt
 cp .example-env .env
+cd ..
 ```
 
 Download language model for `speech-to-text-server` from [here](https://alphacephei.com/vosk/models):
 ```
+cd speech-to-text-server
 wget https://alphacephei.com/vosk/models/vosk-model-en-us-aspire-0.2.zip
 unzip https://alphacephei.com/vosk/models/vosk-model-en-us-aspire-0.2.zip
 mv vosk-model-en-us-aspire-0.2 model
 rm vosk-model-en-us-aspire-0.2.zip
+cd ..
 ```
 
 # Usage
