@@ -15,57 +15,57 @@ The following are key components and frameworks used:
 
 # Setting-up
 Clone full project:
-'''
+```
 git clone git@github.com:uphop/voice-sentiment.git
 cd voice-sentiment
-'''
+```
 
 Install dependencies and prepare configuration for `voice-sentiment-app`:
-'''
+```
 cd voice-sentiment-app
 yarn install
 cp .env.sample .env
-'''
+```
 
 Install dependencies and prepare configuration for `sentiment-assessment-server`:
-'''
+```
 cd sentiment-assessment-server
 pip3 install -r requrements.txt
 cp .example-env .env
-'''
+```
 
 Install dependencies and prepare configuration for `speech-to-text-server`:
-'''
+```
 cd speech-to-text-server
 pip3 install -r requrements.txt
 cp .example-env .env
-'''
+```
 
 Download language model for `speech-to-text-server` from [here](https://alphacephei.com/vosk/models):
-'''
+```
 wget https://alphacephei.com/vosk/models/vosk-model-en-us-aspire-0.2.zip
 unzip https://alphacephei.com/vosk/models/vosk-model-en-us-aspire-0.2.zip
 mv vosk-model-en-us-aspire-0.2 model
 rm vosk-model-en-us-aspire-0.2.zip
-'''
+```
 
 # Usage
 
 Start `sentiment-assessment-server`:
-'''
+```
 cd sentiment-assessment-server
 ./run.sh
-'''
+```
 
 Start `speech-to-text-server`:
-'''
+```
 cd speech-to-text-server
 ./run.sh
-'''
+```
 
 Start `voice-sentiment-app`:
-'''
+```
 cd voice-sentiment-app
 yarn start
-'''
+```
 
