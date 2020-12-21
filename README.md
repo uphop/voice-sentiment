@@ -1,4 +1,6 @@
-# Overview
+# Real-time voice sentiment assessment with RecordRTC, Vosk and TextBlob
+
+## Overview
 
 This is a simple sentiment analysis application, transcribing a real-time audio input from microphone into text using [Vosk](https://alphacephei.com/vosk/), and then running a sentiment analysis on that text with [TextBlob](https://textblob.readthedocs.io/en/dev/) and visualising [sentiment scores](https://www.quora.com/What-is-polarity-and-subjectivity-in-sentiment-analysis) - polarity (i.e. emotions expressed in a sentence) and subjectivity (which expresses some personal feelings, views, or beliefs).
 
@@ -13,7 +15,7 @@ The following are key components and frameworks used:
 * [TextBlob](https://textblob.readthedocs.io/en/dev/) - used for text sentiment analysis in `sentiment-assessment-server`
 * [d3](https://d3js.org/) - used in `voice-sentiment-app` for sentiment score visualisation
 
-# Setting-up
+## Setting-up
 Clone full project:
 ```
 git clone git@github.com:uphop/voice-sentiment.git
@@ -54,7 +56,7 @@ rm vosk-model-en-us-aspire-0.2.zip
 cd ..
 ```
 
-# Starting-up
+## Starting-up
 
 Start `sentiment-assessment-server`:
 ```
