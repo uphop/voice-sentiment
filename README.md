@@ -4,7 +4,7 @@ pip3 install -r requirements.txt
 
 # Overview
 
-This is a simple sentiment analysis application, transcribing audio input from microphone into text, running a sentiment analysis on that text and visualising (sentiment scores)[https://www.quora.com/What-is-polarity-and-subjectivity-in-sentiment-analysis] - polarity (i.e. emotions expressed in a sentence) and subjectivity (which expresses some personal feelings, views, or beliefs).
+This is a simple sentiment analysis application, transcribing audio input from microphone into text, running a sentiment analysis on that text and visualising [sentiment scores](https://www.quora.com/What-is-polarity-and-subjectivity-in-sentiment-analysis) - polarity (i.e. emotions expressed in a sentence) and subjectivity (which expresses some personal feelings, views, or beliefs).
 
 The app consists of of the following modules:
 * voice-sentiment-app: a React application, which captures audio stream from a microphone, streams audio chunks via a websocket to speech-to-text-server for transcribing, and then the transcribed text to sentiment-assessment-server to get sentiment scores.
