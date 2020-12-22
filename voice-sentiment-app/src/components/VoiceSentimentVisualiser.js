@@ -219,10 +219,8 @@ class VoiceSentimentVisualiser extends React.Component {
     // Renders transcribed text
     renderTranscribedText() {
         const fullText = (this.state.partial) ? this.state.text.concat(this.state.partial) : this.state.text;
-        const st = '#0000a0';
         return (
             <textarea id='ta' value={fullText} readOnly />
-            //<p><span style={{color: st}}>{fullText}</span> </p>
         );
     }
 
