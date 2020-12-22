@@ -194,7 +194,7 @@ class VoiceSentimentVisualiser extends React.Component {
                 // close socket with SA server
                 this.saSocketClient.closeSocket();
                 // signal EOF to STT server
-                this.sttSocketClient.eofSocket('{"eof" : 1}');
+                this.sttSocketClient.sendRequest('{"eof" : 1}');
                 // reset microphone
                 if (this.state.microphone) this.state.microphone.destroy();
                 // update state
