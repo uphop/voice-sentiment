@@ -33,7 +33,7 @@ cd ..
 Install dependencies and prepare configuration for `sentiment-assessment-server`:
 ```
 cd sentiment-assessment-server
-pip3 install -r requrements.txt
+pip3 install -r requirements.txt
 cp .example-env .env
 cd..
 ```
@@ -41,7 +41,7 @@ cd..
 Install dependencies and prepare configuration for `speech-to-text-server`:
 ```
 cd speech-to-text-server
-pip3 install -r requrements.txt
+pip3 install -r requirements.txt
 cp .example-env .env
 cd ..
 ```
